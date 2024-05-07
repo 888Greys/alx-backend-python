@@ -15,5 +15,4 @@ async def async_comprehension() -> List[float]:
     """
     Async coroutine function that collects 10 random numbers
     """
-
     return [i async for i in async_generator()]
