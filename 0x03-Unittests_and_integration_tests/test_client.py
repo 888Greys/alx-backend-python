@@ -2,15 +2,18 @@
 """
 Familiarize yourself with the client.GithubOrgClient class.
 
-In a new test_client.py file, declare the TestGithubOrgClient(unittest.TestCase)
+In a new test_client.py file, declare the TestGithubOrgClient
+(unittest.TestCase)
 class and implement the test_org method.
 
-This method should test that GithubOrgClient.org returns the correct value.
+This method should test that GithubOrgClient.org returns the
+correct value.
 
-Use @patch as a decorator to make sure get_json is called once with the expected
+Use @patch as a decorator to make sure get_json is called once
+with the expected
 argument but make sure it is not executed.
 
-Use @parameterized.expand as a decorator to parametrize the test with a couple
+Use @parameterized.expand as a decorator to parametrize the testwith a couple
 of orgexamples to pass to GithubOrgClient, in this order:
 
 google
