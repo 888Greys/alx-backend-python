@@ -175,7 +175,8 @@ class TestIntegrationGithubOrgClient(unittest.TestCase):
 
         cls.get_patcher = patch("requests.get", side_effect=get_payload)
         cls.get_patcher.start()
-
+        
+    @classmethod
     def test_public_repos(self) -> None:
         """
         Tests the `public_repos` method.
